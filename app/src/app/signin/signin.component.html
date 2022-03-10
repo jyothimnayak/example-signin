@@ -4,21 +4,21 @@
 <br>
 <p style="text-align: center;">Dont have an account?<a href="Create" style="color:blue">Sign Up</a> </p>
 <br>
-<form>
+<form [formGroup]="signinForm">
 <mat-label>Email</mat-label>
 <br>
-<mat-form-field appearance="outline" style="width: 100%; ">
-    <input type="email" matInput placeholder="" >
+<mat-form-field appearance="outline" style="width: 100%; " >
+    <input type="email" matInput placeholder="" formControlName="email">
 </mat-form-field>
 <br>
 <mat-label>Password</mat-label>
 <br>
-<mat-form-field appearance="outline" style="width: 100%; ">
-    <input matInput placeholder="">
+<mat-form-field appearance="outline" style="width: 100%; " >
+    <input matInput placeholder="" formControlName="password">
     <mat-hint align="end" ><a href="Forgot" style="color:blue">Forgot your Password?</a></mat-hint>
 </mat-form-field>
 <br>
 <br>
-<button mat-raised-button color="primary" style="width: 100%;text-align: start; "><i style="font-size:24px;padding-right: 40%;" class="fa">&#xf023;</i> Sign In</button>
+<button mat-raised-button color="primary" style="width: 100%;text-align: start; " (click)="addItem()"><i style="font-size:24px;padding-right: 40%;" class="fa">&#xf023;</i> Sign In</button>
 </form>
 </div>
