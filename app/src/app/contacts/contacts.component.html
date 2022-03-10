@@ -1,1 +1,38 @@
-<p>contacts works!</p>
+<div class="main">
+<h1 style="text-align: center;"><b>Add Contacts</b></h1>
+<br>
+<form [formGroup]="contactForm">
+<div>   
+<label style="padding-right: 9px;">Name</label>
+<input type="text" style="padding: 5px;" formControlName="name">
+</div>
+<br>
+<div>
+<label style="padding-right: 10px;">Ph No</label>
+<input type="number" style="padding: 5px;" formControlName="phonenumber">
+</div>
+<br>
+<div>
+<label style="padding-right: 10px;">Email</label>
+<input type="email" style="padding: 5px;" formControlName="email">
+</div>
+<br>
+<button mat-raised-button color="primary" (click)="addItem()"> Save</button>
+</form>
+<br>
+<h3 style="text-align: center;"><b>My Contacts</b></h3>
+    <table style="width:100%; ">
+      <thead>
+        <th >Name</th>
+        <th >Ph No</th>
+        <th >Email</th>
+      </thead>
+      <tr *ngFor="let Contact of ContactList">
+        <td>{{Contact.name}}</td>
+        <td>{{Contact.phonenumber}}</td>
+        <td>{{Contact.email}}</td>
+      </tr>
+    </table>
+</div>
+
+
