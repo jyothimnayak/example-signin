@@ -3,7 +3,19 @@
     width: 30%;
     padding: 10px;
 }
-table, th, td {
-    border: 1px solid black;
+table, th {
+    border: 2px solid black;
+    color: white;
+    font-size: small;
+    font-style: normal;
+    padding: 25px;
+    background-color: darkgray;
     border-collapse: collapse;
+  }
+  td{
+    border: 1px solid black;
+    padding: 25px;
+    color: black;
+    background-color: white;
+    border-collapse: collapse; 
   }
