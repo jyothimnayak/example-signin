@@ -1,6 +1,6 @@
 <div class="main">
-<h1 style="text-align: center;"><b>Add Contacts</b></h1>
-<br>
+<h2 style="text-align: center;"><b>Contact Form and Contact List Page</b></h2>
+<h3 style="padding-left: 60px;">Add Contacts</h3>
 <form [formGroup]="contactForm">
 <div>   
 <label style="padding-right: 9px;">Name</label>
@@ -13,14 +13,16 @@
 </div>
 <br>
 <div>
-<label style="padding-right: 10px;">Email</label>
+<label style="padding-right: 12px;">Email</label>
 <input type="email" style="padding: 5px;" formControlName="email">
 </div>
 <br>
+<div style="padding-left:160px">
 <button mat-raised-button color="primary" (click)="addItem()"> Save</button>
+</div>
 </form>
 <br>
-<h3 style="text-align: center;"><b>My Contacts</b></h3>
+<h3 style="padding-left: 60px;">My Contacts</h3>
     <table style="width:100%; ">
       <thead>
         <th >Name</th>
